@@ -1,4 +1,5 @@
 import csv
+from subprocess import DETACHED_PROCESS
 
 def escrever_csv(nome_arquivo, dados):
     try:
@@ -20,5 +21,6 @@ def escrever_csv(nome_arquivo, dados):
     ]
 
 nome_arquivo = input("Digite o nome do arquivo CSV a ser criado:")
-print(escrever_csv(nome_arquivo, dados )) 
+print(escrever_csv(nome_arquivo, dados ))
+ 
          # type: ignore
